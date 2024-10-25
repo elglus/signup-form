@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'bebasregular';
+    src: url('fonts/bebas-regular-webfont.woff2') format('woff2'),
+         url('fonts/bebas-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montheavy_demo';
+    src: url('fonts/mont-heavydemo-webfont.woff2') format('woff2'),
+         url('fonts/mont-heavydemo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    background-color: whitesmoke;
+  }
+
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  .banner {
+    height: 100vh;
+    max-width: 40%;
+    position: relative;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .logo {
+    position: absolute;
+    top: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0, .5);
+    width: 100%;
+    height: auto;
+  }
+
+  .logo > img {
+    height: 120px;
+    width: auto;
+  }
+
+  .logo-text {
+    font-family: 'bebasregular';
+    color: white;
+    font-size: 6rem;
+    width: auto;
+  }
+
+  form {
+    width: 37%;
+    margin: 0 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+  }
+
+  p {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  p+p {
+    margin-top: 1.5rem;
+  }
